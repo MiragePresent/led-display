@@ -29,3 +29,8 @@ body {
     font-family: sans-serif;
     text-align: center;
 }
+
+.led-point {
+    border: 1px solid white;
+    border-radius: 50%;
+}

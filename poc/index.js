@@ -19,6 +19,7 @@ function createGrid(display, width, height) {
         for (let x = 0; x < width; x++) {
             let td = document.createElement("td")
             td.setAttribute("id", "cell-" + x + "-" + y)
+            td.setAttribute("class", "led-point")
             tr.appendChild(td)
         }
     }
