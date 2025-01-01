@@ -9,13 +9,19 @@
         <div id="display-config">
             <div id="display-text">
                 <label for="displaytext">Enter text to display:</label>
-                <input name="displaytext" value="hello" />
+                <input id="displaytext" name="displaytext" value="hello" />
             </div>
             <div id="display-dimension">
                 <label for="displaywidth">Width</label>
                 <input id="displaywidth" name="displaywidth" value="43" type="number" />
                 <label for="displayheight">Height</label>
                 <input id="displayheight" name="displayheight" value="17" type="number" />
+            </div>
+            <div id="text-style">
+                <label for="fontsize">Font size</label>
+                <input id="fontsize" name="fontsize" value="7" type="number" min="7" max="9"/>
+                <label for="fontbold">Bold</label>
+                <input type="checkbox" id="fontbold" name="fontbold" value="1" selected="false" disabled/>
             </div>
         </div>
         <div id="display"></div>
