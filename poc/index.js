@@ -2,7 +2,18 @@ window.onload = function (e) {
     console.log("Initializing LED display POC...")
     const display = document.getElementById("display")
 
-    createGrid(display, 43, 14)
+    const textInput = document.getElementById("displaytext")
+    const widthInput = document.getElementById("displaywidth")
+    const heightInput = document.getElementById("displayheight")
+
+    widthInput.onchange = function (e) {
+        reCreateGrid(display, widthInput.value, heightInput.value)
+    }
+    heightInput.onchange = function (e) {
+        reCreateGrid(display, widthInput.value, heightInput.value)
+    }
+
+    createGrid(display, widthInput.value, heightInput.value)
 }
 
 function createGrid(display, width, height) {
@@ -23,4 +34,13 @@ function createGrid(display, width, height) {
             tr.appendChild(td)
         }
     }
+}
+
+function reCreateGrid(display, width, height) {
+    let table = document.getElementById("display-table")
+    
+    if (table !== undefined) {
+        display.removeChild(table)
+    }
+    createGrid(display, width, height)
 }

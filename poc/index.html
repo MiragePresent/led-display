@@ -6,6 +6,18 @@
     </head>
     <body>
         <h1 class="header">LED Display POC</h1>
+        <div id="display-config">
+            <div id="display-text">
+                <label for="displaytext">Enter text to display:</label>
+                <input name="displaytext" value="hello" />
+            </div>
+            <div id="display-dimension">
+                <label for="displaywidth">Width</label>
+                <input id="displaywidth" name="displaywidth" value="43" type="number" />
+                <label for="displayheight">Height</label>
+                <input id="displayheight" name="displayheight" value="17" type="number" />
+            </div>
+        </div>
         <div id="display"></div>
     </body>
     <script src="./index.js"></script>

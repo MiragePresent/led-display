@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    color: #fff;
 }
 #display {
     display: flex;
@@ -7,8 +8,7 @@ body {
 }
 
 #display-table {
-    background-color: black;
-    border-color: white;
+    border-color: #fff;
     border-style: solid;
 }
 
@@ -25,9 +25,16 @@ body {
 }
 
 .header {
-    color: white;
     font-family: sans-serif;
     text-align: center;
+}
+
+#display-config {
+    padding: 20px;
+}
+
+#display-config div {
+    margin-bottom: 10px;
 }
 
 .led-point {
